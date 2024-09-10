@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0b0a0a; /* Couleur de fond pour contraster avec la chauve-souris */
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#bat {
+    position: absolute;
+    display: none;
+    width: 100px; /* Ajustez la taille de la chauve-souris selon vos besoins */
+    pointer-events: none; /* Permet à la chauve-souris de ne pas interférer avec les clics */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./Illustration/Batgame_1.png" alt="" id="bat">
+    </div>
+    <script>
+    document.addEventListener('mousemove', function(e) {
+    const bat = document.getElementById('bat');
+    bat.style.left = e.pageX + 'px';
+    bat.style.top = e.pageY + 'px';
+    bat.style.display = 'block';
+});
+
+    </script>
+</body>
+</html>

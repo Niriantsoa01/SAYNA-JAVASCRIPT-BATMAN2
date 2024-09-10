@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman | Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <a class="image" href="#">
+                <img src="./logos/logohome.png" alt="Logo">
+            </a>
+            <ul class="menu">
+                <li>
+                    <a id="nav-home" href="../Home/index.html">Home</a>
+                </li>
+                <li>
+                    <a id="nav-game" href="../Game/index.html">Game</a> 
+                </li>
+            </ul>
+        </nav>
+
+          <!--Home texte & logos aside-->
+          <div class="header-container">
+                 <div class="header-texte">
+                    <h1>Let's play a little game...</h1>
+            <div class="header-logo">
+                    <ul class="logos">
+                        <li>
+                            <img src="./logos/logo_bat_flèche.png" alt="bat_fleche" class="prev-haut">
+                        </li>
+
+                        <li>
+                            <img src="./logos/icon_facebook.png" alt="" class="social">
+                        </li>
+
+                        <li>
+                            <img src="./logos/icon_ig.png" alt="" class="social">
+                        </li>
+
+                        <li>
+                            <img src="./logos/icon_tw.png" alt="" class="social">
+                        </li>
+
+                        <li>
+                            <img src="./logos/logo_bat_flèche_2.png" alt="" class="next-bas">
+                        </li>
+                    </ul>
+                </div>
+              </div>
+    </header>
+    <div class="down_fleche">
+        <img src="./logos/flèche_down_header.png" alt="down_fleche" class="down_fleche">
+    </div>
+
+    <!--main-->
+    <main>  
+        <section class="avant-propos">
+            <div class="section-title">
+                <h2>Connaissez vous bien le chevalier noir</h2>
+            </div>
+            <div class="section-image">
+            <img src="./Illustration/Batgame_2.png" alt="image">
+            </div>
+            <div class="button-section">
+            <button id="start">Démarrer le quiz</button>
+            </div>   
+
+             <!--Quizz Section-->
+            <div class="quiz" id="game" style="display: none;">
+                <div id="quiz-container">
+                <div id="question"></div>
+                <img id="question-image" src="" alt="image-question">
+                <div id="answers"></div>
+                </div>
+            </div>
+            
+
+            <!--Modal-->
+            <div class="modal" id="modal">
+                <button class="restart">Rejouer</button>
+            </div>
+
+            <!--Submit button-->
+            <div class="submit">
+                <button id="submit">Question Suivante</button>
+            </div>
+        </section>
+       
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <!--Finally items-->
+            <div class="finally-container">
+                <p class="end-text text-white">
+                    <img src="./logos/icon_WB.png" alt="wb_icon"> 
+                    Ce projet respecte l &apos;univers cinématographique des films Batman récents. Version Nolan &
+                    Snyder & Reeves
+                </p>
+            </div>
+                <!--logos-->
+                <div class="logo-content">
+                    <img src="./logos/logo_sayna_white.png" alt=""> 
+                    <img src="./logos/icon_x.png" alt="">
+                    <img src="./logos/icon_DC.png" alt="">
+                    <img src="./logos/icon_facebook.png" alt="">
+                    <img src="./logos/icon_ig.png" alt="">
+                    <img src="./logos/icon_tw.png" alt="">
+                </div>
+        </div>
+    </footer>
+   
+    <script type="text/javaScript" src="./js/quizz.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javaScript" src="./js/scroll.js"></script>
+    <script type="text/javaScript" src="../Script/main.js"></script>
+</body>
+</html>
