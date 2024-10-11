@@ -277,51 +277,53 @@
 
 <div class="bande_annonce">
     <img src="./illustration/Bathome_ba2.png" alt="bande_annonce">
-     </div>
+</div>
 
     
     <!--Contact Section-->
 <section class="section_contact" id="contact">
     <div class="container_contact text-white">
     <h2 class="contact_title text-white">PRENONS CONTACT</h2>
-<form action="">
-    <label for="email">ADDRESSE EMAIL</label>
-        <input type="email" name="mail" placeholder="Enter mail here" autocomplete="off" required>    
-    <label for="news">NEWSLETTER</label>
-    <p class="para-content">En couchant sur cette vous acceptez de recevoir une actualité concernant les aventures de
-        Batman : 
-        <input type="checkbox" name="ckeckbox" id="checked" required>
-    </p>
+    <div class="contact-content">
+    <form>
+        <label for="email">ADDRESSE EMAIL</label>
+            <input type="email" name="mail" placeholder="Enter mail here" autocomplete="off" required>    
+        <label for="news">NEWSLETTER</label>
+        <p class="para-content">En couchant sur cette vous acceptez de recevoir une actualité concernant les aventures de
+            Batman : 
+            <input type="checkbox" name="ckeckbox" id="checked" required>
+        </p>
 
-    <select id="select" required>
-        <option value="" disabled selected>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
-        <option value="jour">Journalier</option>
-        <option value="semaine">Hebdomadaire</option>
-        <option value="mois">Mensuel</option>
-    </select>
+        <select id="select" required>
+            <option value="" disabled selected>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+            <option value="jour">Journalier</option>
+            <option value="semaine">Hebdomadaire</option>
+            <option value="mois">Mensuel</option>
+        </select>
     
-    <input type="text" name="text" placeholder="Souhaitez-vous recevoir des news" autocomplete="off">
+        <input type="text" name="text" placeholder="Souhaitez-vous recevoir des news" autocomplete="off">
 
       <!--button-->
-    <div class="button-contact">
-        <button class="btn">Des films</button>
-        <button class="btn">Des comics</button>
-        <button class="btn">De tout</button>
-    </div>
+        <div class="button-contact">
+            <button class="btn">Des films</button>
+            <button class="btn">Des comics</button>
+            <button class="btn">De tout</button>
+        </div>
 
-      <label for="mrssage">MESSAGE</label>
+        <label for="message">MESSAGE</label>
         <input type="text" name="text" placeholder="Laisser un commentaire pour la communauté" autocomplete="off">
-        <button type="submit" id="button" class="btn btn-primary">CONFIRMER</button>
-</form>
 
         <!--modal-->
-    <div class="modal" id="myModal">
-        <div class="modal-content">
-            <span class="close">x</span>
-            <div class="inside">
-                 <p>Message recu !</p>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <span class="close">x</span>
+                <div class="inside">
+                    <p>Message recu !</p>
+                </div>
             </div>
         </div>
+        <button type="submit" id="button" class="btn">CONFIRMER</button>
+    </form>
     </div>
 </div>
 </section>
